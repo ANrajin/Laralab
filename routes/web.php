@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+/**
+ * Register the not found page
+ * This must be include at last position of all routes
+ */
+Route::fallback(function () {
+    return view("not-found");
+});
