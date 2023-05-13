@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-alpine
+FROM php:8.0.5-fpm-alpine
 
 ENV PECL_EXTENSIONS="pcov psr redis xdebug"
 ENV PHP_EXTENSIONS="bz2 exif gd gettext intl pcntl pdo pdo_mysql zip"
